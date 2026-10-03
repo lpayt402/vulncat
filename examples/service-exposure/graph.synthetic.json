@@ -1,0 +1,216 @@
+{
+  "source": "synthetic-topology",
+  "instance": "cedar-services",
+  "observed_at": "2026-10-01T14:00:00Z",
+  "source_version": "synthetic-graph-v1",
+  "time_meaning": "source_observed",
+  "nodes": [
+    {
+      "ref": "lb",
+      "native_id": "lb",
+      "kind": "load_balancer",
+      "label": "Cedar reverse proxy",
+      "ip_address": "192.0.2.10",
+      "network_scope": "edge",
+      "facts": {
+        "fingerprint": "ApplianceOS 4"
+      }
+    },
+    {
+      "ref": "vip",
+      "native_id": "vip",
+      "kind": "vip",
+      "label": "Shared HTTPS VIP",
+      "ip_address": "192.0.2.10",
+      "network_scope": "edge"
+    },
+    {
+      "ref": "checkout",
+      "native_id": "checkout",
+      "kind": "service",
+      "label": "Checkout application",
+      "network_scope": "east-private"
+    },
+    {
+      "ref": "status",
+      "native_id": "status",
+      "kind": "service",
+      "label": "Status application",
+      "network_scope": "east-private"
+    },
+    {
+      "ref": "checkout-https",
+      "native_id": "checkout-https",
+      "kind": "endpoint",
+      "label": "Checkout HTTPS",
+      "ip_address": "192.0.2.10",
+      "protocol": "tcp",
+      "port": 443,
+      "dns_name": "checkout.example.test",
+      "sni": "checkout.example.test",
+      "network_scope": "edge"
+    },
+    {
+      "ref": "status-https",
+      "native_id": "status-https",
+      "kind": "endpoint",
+      "label": "Status HTTPS",
+      "ip_address": "192.0.2.10",
+      "protocol": "tcp",
+      "port": 443,
+      "dns_name": "status.example.test",
+      "sni": "status.example.test",
+      "network_scope": "edge"
+    },
+    {
+      "ref": "east-a",
+      "native_id": "east-a",
+      "kind": "host",
+      "label": "East worker A",
+      "ip_address": "10.20.0.5",
+      "network_scope": "east-private",
+      "facts": {
+        "fingerprint": "Ubuntu 24.04"
+      }
+    },
+    {
+      "ref": "east-b",
+      "native_id": "east-b",
+      "kind": "host",
+      "label": "East worker B",
+      "ip_address": "10.20.0.6",
+      "network_scope": "east-private"
+    },
+    {
+      "ref": "west-a",
+      "native_id": "west-a",
+      "kind": "host",
+      "label": "West worker A",
+      "ip_address": "10.20.0.5",
+      "network_scope": "west-private",
+      "facts": {
+        "fingerprint": "Windows Server 2022"
+      }
+    },
+    {
+      "ref": "appliance",
+      "native_id": "appliance",
+      "kind": "device",
+      "label": "Cedar edge appliance",
+      "ip_address": "192.0.2.30",
+      "network_scope": "edge"
+    },
+    {
+      "ref": "appliance-mgmt",
+      "native_id": "appliance-mgmt",
+      "kind": "endpoint",
+      "label": "Appliance management HTTPS",
+      "ip_address": "192.0.2.31",
+      "protocol": "tcp",
+      "port": 8443,
+      "dns_name": "edge-mgmt.example.test",
+      "network_scope": "management"
+    },
+    {
+      "ref": "appliance-data",
+      "native_id": "appliance-data",
+      "kind": "endpoint",
+      "label": "Appliance data plane",
+      "ip_address": "192.0.2.30",
+      "protocol": "tcp",
+      "port": 443,
+      "network_scope": "edge"
+    }
+  ],
+  "relationships": [
+    {
+      "kind": "endpoint_of",
+      "from_node": "checkout-https",
+      "to_node": "checkout",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "endpoint_of",
+      "from_node": "status-https",
+      "to_node": "status",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "routes_to",
+      "from_node": "vip",
+      "to_node": "checkout-https",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "routes_to",
+      "from_node": "vip",
+      "to_node": "status-https",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "routes_to",
+      "from_node": "lb",
+      "to_node": "checkout",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "routes_to",
+      "from_node": "lb",
+      "to_node": "status",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "backed_by",
+      "from_node": "checkout",
+      "to_node": "east-a",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "backed_by",
+      "from_node": "checkout",
+      "to_node": "east-b",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "backed_by",
+      "from_node": "status",
+      "to_node": "east-b",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "management_of",
+      "from_node": "appliance-mgmt",
+      "to_node": "appliance",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    },
+    {
+      "kind": "hosted_on",
+      "from_node": "appliance-data",
+      "to_node": "appliance",
+      "evidence": {
+        "basis": "Explicit hypothetical operator mapping; no discovery"
+      }
+    }
+  ],
+  "attributions": []
+}

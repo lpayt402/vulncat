@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NessusClientData_v2>
+  <Report name="Synthetic Nessus Example">
+    <ReportHost name="web-02.example.test">
+      <HostProperties>
+        <tag name="host-ip">203.0.113.42</tag>
+        <tag name="host-fqdn">web-02.example.test</tag>
+        <tag name="netbios-name">WEB-02</tag>
+        <tag name="operating-system">Example Server OS</tag>
+        <tag name="mac-address">AA:BB:CC:DD:EE:01</tag>
+        <tag name="host-uuid">nessus-example-host-42</tag>
+        <tag name="HOST_START">Tue Jul 14 10:00:00 2026</tag>
+        <tag name="HOST_END">Tue Jul 14 10:30:00 2026</tag>
+      </HostProperties>
+      <ReportItem port="22" svc_name="ssh" protocol="tcp" severity="2"
+                  pluginID="30001" pluginName="Example SSH Configuration"
+                  pluginFamily="General">
+        <risk_factor>Medium</risk_factor>
+        <cvss3_base_score>5.3</cvss3_base_score>
+        <cve>CVE-2025-30001</cve>
+        <synopsis>Example SSH synopsis</synopsis>
+        <description>Example SSH description</description>
+        <solution>Apply the fictional SSH configuration.</solution>
+        <plugin_output>Safe synthetic plugin evidence.</plugin_output>
+        <plugin_publication_date>2026/01/10</plugin_publication_date>
+        <plugin_modification_date>2026/02/10</plugin_modification_date>
+        <exploit_available>false</exploit_available>
+        <exploited_by_malware>false</exploited_by_malware>
+      </ReportItem>
+    </ReportHost>
+  </Report>
+</NessusClientData_v2>

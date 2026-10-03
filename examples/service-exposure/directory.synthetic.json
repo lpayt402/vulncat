@@ -1,0 +1,12 @@
+[
+  {
+    "fixture_ref": "directory-logon",
+    "native_id": "synthetic-object-guid",
+    "kind": "inventory",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "native_id_kind": "object_guid",
+    "hostname": "worker-a.example.test",
+    "ip": "10.20.0.5",
+    "operating_system": "Windows Server 2019"
+  }
+]

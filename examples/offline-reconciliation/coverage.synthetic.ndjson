@@ -1,0 +1,2 @@
+{"native_id":"synthetic-inv-1","hostname":"renamed.example.test","kind":"coverage","coverage_outcome":"dns_failed","native_status":"name_did_not_resolve","observed_at":"2026-10-01T00:00:00Z"}
+{"native_id":"synthetic-inv-2","hostname":"unreachable.example.test","kind":"coverage","coverage_outcome":"unreachable","complete":false,"observed_at":"2026-10-01T00:00:00Z"}

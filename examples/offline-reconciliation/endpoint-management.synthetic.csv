@@ -1,0 +1,3 @@
+Device Key,Computer,Address,Vulnerability Key,Occurrence Key,Status,Package,Version,Seen
+synthetic-endpoint-management-1,renamed.example.test,192.0.2.10,CVE-2099-10001,synthetic-endpoint-management-occ-1,Vulnerable,Web application,1.0,2026-10-01T00:00:00Z
+synthetic-endpoint-management-2,ignored.example.test,192.0.2.20,CVE-2099-10004,synthetic-endpoint-management-occ-2,Ignored,Management utility,2.0,2026-10-01T00:00:00Z

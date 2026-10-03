@@ -1,0 +1,4 @@
+Host,Plugin,Owner,Team,Proposed state,Follow-up,Exception,Approver,Review by,Expires,Compensating control
+label-api-02.cedarridge.example.test,10001,Elena Ward,Infrastructure,planned,Validate carrier clients before disabling TLS 1.0,,,,,
+freight-db-02.cedarridge.example.test,20001,Noah Kim,Infrastructure,risk_accepted,Confirm encrypted client support,CRF-EXC-021,Omar Patel,2026-10-15,2026-11-01,Listener restricted to the synthetic application segment
+freight-edge-03.cedarridge.example.test,40002,,Infrastructure,open,Confirm the accountable owner before setting a change date,,,,,

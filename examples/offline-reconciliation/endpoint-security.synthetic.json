@@ -1,0 +1,5 @@
+{"resources":[
+  {"aid":"synthetic-agent-1","id":"synthetic-occurrence-1","status":"open","updated_timestamp":"2026-10-01T00:00:00Z","host_info":{"hostname":"renamed.example.test","local_ip":"192.0.2.10","hardware_uuid":"synthetic-hw-1"},"cve":{"id":"CVE-2099-10001"},"app":{"name":"Web application","version":"1.0"}},
+  {"aid":"synthetic-cloned-agent","id":"synthetic-occurrence-2","status":"closed","updated_timestamp":"2026-10-01T00:00:00Z","host_info":{"hostname":"clone-a.example.test","local_ip":"192.0.2.11","hardware_uuid":"synthetic-hw-2"},"cve":{"id":"CVE-2099-10002"},"app":{"name":null,"version":null}},
+  {"aid":"synthetic-cloned-agent","id":"synthetic-occurrence-3","status":"open","updated_timestamp":"2026-10-01T00:00:00Z","host_info":{"hostname":"clone-b.example.test","local_ip":"192.0.2.12","hardware_uuid":"synthetic-hw-3"},"cve":{"id":"CVE-2099-10003"},"app":{"name":null,"version":null}}
+]}

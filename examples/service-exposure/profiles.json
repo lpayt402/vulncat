@@ -1,0 +1,72 @@
+[
+  {
+    "filename": "inventory-east.synthetic.json",
+    "options": {
+      "source": "inventory",
+      "instance": "cedar-inventory-east",
+      "format": "json",
+      "network_scope": "east-private",
+      "time_meaning": "source_observed"
+    }
+  },
+  {
+    "filename": "infrastructure-west.synthetic.json",
+    "options": {
+      "source": "netbox",
+      "instance": "cedar-infrastructure-west",
+      "format": "json",
+      "network_scope": "west-private",
+      "time_meaning": "source_observed"
+    }
+  },
+  {
+    "filename": "scanner.synthetic.json",
+    "options": {
+      "source": "nessus",
+      "instance": "cedar-scanner-east",
+      "format": "json",
+      "network_scope": "east-private",
+      "time_meaning": "source_observed"
+    }
+  },
+  {
+    "filename": "endpoint-management.synthetic.json",
+    "options": {
+      "source": "pdq_connect",
+      "instance": "cedar-endpoint-management-east",
+      "format": "json",
+      "network_scope": "east-private",
+      "time_meaning": "source_observed"
+    }
+  },
+  {
+    "filename": "endpoint-security-stale.synthetic.json",
+    "options": {
+      "source": "crowdstrike",
+      "instance": "cedar-endpoint-security-east",
+      "format": "json",
+      "network_scope": "east-private",
+      "time_meaning": "source_observed"
+    }
+  },
+  {
+    "filename": "directory.synthetic.json",
+    "options": {
+      "source": "active_directory",
+      "instance": "cedar-directory-east",
+      "format": "json",
+      "network_scope": "east-private",
+      "time_meaning": "last_logon"
+    }
+  },
+  {
+    "filename": "inventory-unknown.synthetic.json",
+    "options": {
+      "source": "inventory",
+      "instance": "cedar-inventory-east",
+      "format": "json",
+      "network_scope": "east-private",
+      "time_meaning": "unknown"
+    }
+  }
+]

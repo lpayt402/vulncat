@@ -1,0 +1,47 @@
+VULNCAT - START HERE
+======================
+
+You do not need to be a developer.
+
+1. Install and open Docker Desktop:
+   https://www.docker.com/products/docker-desktop/
+
+2. Keep this entire Vulncat folder together.
+
+3. Double-click:
+   Start Vulncat.bat
+
+4. Wait for the green "Vulncat is ready" message.
+   The first build can take several minutes.
+
+5. Your browser opens to:
+   http://localhost:8787
+
+6. On the first visit, create your administrator account.
+   Vulncat has no default username or password.
+
+Daily shortcuts
+---------------
+Start Vulncat.bat       = start or update the application
+Vulncat Status.bat      = check whether it is ready
+Stop Vulncat.bat        = stop it without deleting data
+Back Up Vulncat.bat     = back up the database
+
+IMPORTANT
+---------
+Do not run "docker compose down -v" with important data.
+The "-v" part permanently deletes the database, uploads, and reports.
+
+The database-backup button does not include original uploads or generated
+report files. For a complete backup, read:
+docs\backup-restore.md
+
+If startup fails
+----------------
+1. Open Docker Desktop.
+2. Wait for Docker to finish starting.
+3. Run Start Vulncat.bat again.
+4. Run Vulncat Status.bat.
+5. Read docs\troubleshooting.md.
+
+Nothing is deleted by an ordinary failed start.

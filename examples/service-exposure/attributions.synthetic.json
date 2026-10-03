@@ -1,0 +1,80 @@
+[
+  {
+    "fixture_ref": "east-a",
+    "node_ref": "east-a",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "east-b",
+    "node_ref": "east-b",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "lb",
+    "node_ref": "lb",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "appliance",
+    "node_ref": "appliance",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "west-a",
+    "node_ref": "west-a",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "vip-tls",
+    "node_ref": "vip",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "checkout-vuln",
+    "node_ref": "checkout-https",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "mgmt-unreachable",
+    "node_ref": "appliance-mgmt",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "data-scan",
+    "node_ref": "appliance-data",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "management-vuln",
+    "node_ref": "east-a",
+    "status": "attributed",
+    "reason": "Explicit hypothetical source-to-node mapping"
+  },
+  {
+    "fixture_ref": "stale-fingerprint",
+    "node_ref": null,
+    "status": "review_needed",
+    "reason": "Conflicting or insufficient host identity; do not infer from address/name"
+  },
+  {
+    "fixture_ref": "directory-logon",
+    "node_ref": null,
+    "status": "review_needed",
+    "reason": "Conflicting or insufficient host identity; do not infer from address/name"
+  },
+  {
+    "fixture_ref": "unknown-fingerprint",
+    "node_ref": null,
+    "status": "review_needed",
+    "reason": "Conflicting or insufficient host identity; do not infer from address/name"
+  }
+]

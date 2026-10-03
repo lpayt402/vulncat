@@ -1,0 +1,3 @@
+Server Name,Address,Check,Rating,First Seen,Fix,Business Owner Note
+LABEL-API-02.CEDARRIDGE.EXAMPLE.TEST.,192.0.2.44,40001,Medium,2026-08-03T04:12:00Z,"Disable TLS 1.0 after the carrier integration test.",Elena Ward reviews the change
+freight-edge-03.cedarridge.example.test,198.51.100.38,40002,Low,2026-09-02T03:05:00Z,"Limit the file-transfer service to the approved relay.",No owner field in this export

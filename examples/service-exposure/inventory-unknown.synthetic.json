@@ -1,0 +1,11 @@
+[
+  {
+    "fixture_ref": "unknown-fingerprint",
+    "native_id": "unknown-source-object",
+    "kind": "inventory",
+    "observed_at": null,
+    "hostname": "worker-a.example.test",
+    "ip": "10.20.0.5",
+    "operating_system": "Unknown fingerprint"
+  }
+]

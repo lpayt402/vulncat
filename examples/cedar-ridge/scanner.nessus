@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NessusClientData_v2>
+  <Report name="Cedar Ridge Freight synthetic import fixture">
+    <ReportHost name="label-api-02.cedarridge.example.test">
+      <HostProperties>
+        <tag name="host-ip">192.0.2.45</tag>
+        <tag name="host-fqdn">label-api-02.cedarridge.example.test</tag>
+        <tag name="netbios-name">LABEL-API-02</tag>
+        <tag name="operating-system">Windows Server 2022</tag>
+        <tag name="mac-address">02-00-5E-10-00-02</tag>
+        <tag name="host-uuid">nessus-label-api-02</tag>
+        <tag name="HOST_START">Tue Sep 22 04:00:00 2026</tag>
+        <tag name="HOST_END">Tue Sep 22 04:15:00 2026</tag>
+      </HostProperties>
+      <ReportItem port="443" svc_name="https" protocol="tcp" severity="3"
+                  pluginID="10001" pluginName="Legacy TLS protocol offered"
+                  pluginFamily="Service">
+        <risk_factor>High</risk_factor>
+        <cvss3_base_score>7.5</cvss3_base_score>
+        <synopsis>The listener accepts an older TLS protocol.</synopsis>
+        <description>A separate synthetic scanner XML export assigns a higher severity to the same host and plugin than the scanner CSV example.</description>
+        <solution>Confirm the approved client set, then disable TLS 1.0 in the next maintenance window.</solution>
+        <plugin_output>Synthetic scanner evidence: TLSv1.0 was accepted during the test handshake.</plugin_output>
+        <plugin_publication_date>2026/07/12</plugin_publication_date>
+        <plugin_modification_date>2026/08/29</plugin_modification_date>
+        <exploit_available>false</exploit_available>
+        <exploited_by_malware>false</exploited_by_malware>
+      </ReportItem>
+    </ReportHost>
+  </Report>
+</NessusClientData_v2>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NessusClientData_v2><Report name="Synthetic empty-host report"><ReportHost name="empty.example.test"><HostProperties><tag name="host-ip">198.51.100.10</tag></HostProperties></ReportHost></Report></NessusClientData_v2>

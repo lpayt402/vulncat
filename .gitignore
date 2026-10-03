@@ -1,0 +1,36 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+node_modules/
+frontend/dist/
+playwright-report/
+test-results/
+
+data/
+uploads/
+reports/
+backups/
+tmp/
+
+*.log
+*.sqlite3
+
+# Private validation and browser session material
+private-browser-state.json
+storage-state.json
+.playwright-cli/
+/raw-evidence/
+/evidence/
+*.tsbuildinfo
+
+# Local validation scratch data
+.validation-temp/
+pytest-cache-files-*/
+/output/

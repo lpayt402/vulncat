@@ -1,0 +1,4 @@
+{"count":2,"next":null,"previous":null,"results":[
+  {"id":1,"object_type":"dcim.device","name":"renamed.example.test","status":{"value":"active","label":"Active"},"primary_ip4":{"address":"192.0.2.10/24"},"last_updated":"2026-09-30T12:00:00Z"},
+  {"id":1,"object_type":"virtualization.virtualmachine","name":"vm.example.test","status":{"value":"offline","label":"Offline"},"primary_ip4":{"address":"192.0.2.30/24"},"last_updated":"2020-01-01T00:00:00Z"}
+]}

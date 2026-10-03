@@ -1,0 +1,38 @@
+[
+  {
+    "fixture_ref": "east-a",
+    "native_id": "asset-east-a",
+    "kind": "inventory",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "hostname": "worker-a.example.test",
+    "ip": "10.20.0.5",
+    "operating_system": "Ubuntu 24.04"
+  },
+  {
+    "fixture_ref": "east-b",
+    "native_id": "asset-east-b",
+    "kind": "inventory",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "hostname": "worker-b.example.test",
+    "ip": "10.20.0.6",
+    "operating_system": "Ubuntu 24.04"
+  },
+  {
+    "fixture_ref": "lb",
+    "native_id": "lb-asset",
+    "kind": "inventory",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "hostname": "proxy.example.test",
+    "ip": "192.0.2.10",
+    "operating_system": "ApplianceOS 4"
+  },
+  {
+    "fixture_ref": "appliance",
+    "native_id": "edge-asset",
+    "kind": "inventory",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "hostname": "edge.example.test",
+    "ip": "192.0.2.30",
+    "operating_system": "ApplianceOS 4"
+  }
+]

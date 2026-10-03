@@ -1,0 +1,27 @@
+{
+  "findings": [
+    {
+      "asset": {
+        "uuid": "33333333-3333-4333-8333-333333333333",
+        "agent_uuid": "44444444-4444-4444-8444-444444444444",
+        "hostname": "db-01.example.test",
+        "ipv4": "198.51.100.25",
+        "operating_system": "Example Linux"
+      },
+      "plugin": {
+        "id": "20001",
+        "name": "Example Package Advisory",
+        "family": "Example Family"
+      },
+      "severity": "low",
+      "cves": ["CVE-2025-20001"],
+      "port": 0,
+      "protocol": "general",
+      "first_found": "2026-03-01T00:00:00Z",
+      "last_found": "2026-07-02T00:00:00Z",
+      "plugin_publication_date": "2026-02-01",
+      "scan_name": "json-example",
+      "scan_time": "2026-07-02T01:00:00Z"
+    }
+  ]
+}

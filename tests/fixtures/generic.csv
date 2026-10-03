@@ -1,0 +1,3 @@
+Server Name,Address,Check,Rating,First Seen,Fix,Unused Column
+batch-01.example.test,192.0.2.75,40001,Low,2026-04-01T00:00:00Z,Apply the fictional batch fix,ignored
+batch-02.example.test,192.0.2.76,40002,Medium,2026-04-02T00:00:00Z,Apply the second fictional fix,ignored

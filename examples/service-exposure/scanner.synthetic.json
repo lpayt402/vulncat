@@ -1,0 +1,54 @@
+[
+  {
+    "fixture_ref": "vip-tls",
+    "native_id": "scanner-vip",
+    "kind": "vulnerability",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "ip": "192.0.2.10",
+    "vulnerability_id": "SYNTHETIC-TLS-001",
+    "occurrence_id": "vip-tls-443",
+    "title": "Synthetic shared VIP TLS weakness",
+    "port": 443,
+    "protocol": "tcp",
+    "severity": "Medium",
+    "native_status": "open"
+  },
+  {
+    "fixture_ref": "checkout-vuln",
+    "native_id": "scanner-checkout",
+    "kind": "vulnerability",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "hostname": "checkout.example.test",
+    "ip": "192.0.2.10",
+    "vulnerability_id": "SYNTHETIC-HTTP-002",
+    "occurrence_id": "checkout-443",
+    "title": "Synthetic checkout HTTP header finding",
+    "port": 443,
+    "protocol": "tcp",
+    "severity": "Low",
+    "native_status": "open"
+  },
+  {
+    "fixture_ref": "mgmt-unreachable",
+    "native_id": "scanner-edge-mgmt",
+    "kind": "coverage",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "hostname": "edge-mgmt.example.test",
+    "ip": "192.0.2.31",
+    "coverage_outcome": "unreachable",
+    "complete": false,
+    "authenticated": false,
+    "native_status": "connection_failed"
+  },
+  {
+    "fixture_ref": "data-scan",
+    "native_id": "scanner-edge-data",
+    "kind": "coverage",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "ip": "192.0.2.30",
+    "coverage_outcome": "successful",
+    "complete": true,
+    "authenticated": false,
+    "native_status": "completed"
+  }
+]

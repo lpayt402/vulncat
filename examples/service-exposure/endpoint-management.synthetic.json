@@ -1,0 +1,17 @@
+[
+  {
+    "fixture_ref": "management-vuln",
+    "native_id": "connect-device-55",
+    "kind": "vulnerability",
+    "observed_at": "2026-10-01T14:00:00Z",
+    "hostname": "worker-a.example.test",
+    "ip": "10.20.0.5",
+    "vulnerability_id": "SYNTHETIC-PACKAGE-003",
+    "occurrence_id": "package-55",
+    "title": "Synthetic outdated backend package",
+    "package": "web-runtime",
+    "package_version": "1.0",
+    "severity": "Medium",
+    "native_status": "Detected"
+  }
+]

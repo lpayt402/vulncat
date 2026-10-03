@@ -1,0 +1,4 @@
+native_id,hostname,ip,observed_at
+synthetic-inv-1,renamed.example.test,192.0.2.10,2026-10-01T00:00:00Z
+synthetic-inv-1,renamed.example.test,192.0.2.10,2026-10-01T00:00:00Z
+synthetic-inv-2,broken.example.test,not-an-ip,2026-10-01T00:00:00Z

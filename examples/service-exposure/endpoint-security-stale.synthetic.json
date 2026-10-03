@@ -1,0 +1,11 @@
+[
+  {
+    "fixture_ref": "stale-fingerprint",
+    "native_id": "aid-stale",
+    "kind": "inventory",
+    "observed_at": "2026-03-01T09:00:00Z",
+    "hostname": "worker-a.example.test",
+    "ip": "10.20.0.5",
+    "operating_system": "Windows Server 2016"
+  }
+]

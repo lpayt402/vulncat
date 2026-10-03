@@ -1,0 +1,26 @@
+{
+  "findings": [
+    {
+      "asset": {
+        "uuid": "33333333-3333-4333-8333-333333333333",
+        "agent_uuid": "44444444-4444-4444-8444-444444444444",
+        "hostname": "freight-db-02.cedarridge.example.test",
+        "ipv4": "198.51.100.25",
+        "operating_system": "Ubuntu Server 24.04"
+      },
+      "plugin": {
+        "id": "20001",
+        "name": "Database listener accepts clear-text connections",
+        "family": "Databases"
+      },
+      "severity": "low",
+      "port": 5432,
+      "protocol": "tcp",
+      "first_found": "2026-08-19T02:10:00Z",
+      "last_found": "2026-09-24T02:22:00Z",
+      "plugin_publication_date": "2026-07-03",
+      "scan_name": "central-databases-weekly",
+      "scan_time": "2026-09-24T02:22:00Z"
+    }
+  ]
+}
