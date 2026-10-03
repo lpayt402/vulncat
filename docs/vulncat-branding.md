@@ -17,7 +17,7 @@ shortcuts wrap the same established scripts. Old shortcuts and commands remain a
 The distribution name, Python module, Compose project and volumes, database defaults,
 cookie/event names, environment variables and MCP tool names remain compatible. Existing
 stored report paths remain valid; only newly generated report filenames use the Vulncat prefix.
-The repository is private `lpayt402/vulncat`. The reviewed source repository,
+The repository is `lpayt402/vulncat`. The reviewed source repository,
 `lpayt402/vulnerability-workbench`, is preserved separately with its original history.
 
 ## Source labels and hypothetical examples

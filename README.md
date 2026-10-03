@@ -212,5 +212,5 @@ for implementation and validation gaps.
 
 ## License
 
-The repository is private and has no project license file. Dependency names and license
-metadata are retained. Confirm source ownership and choose a project license before public release.
+Vulncat is licensed under the [MIT License](LICENSE), copyright 2026 Lee Payton.
+Third-party dependencies retain their own licenses and attribution requirements.
